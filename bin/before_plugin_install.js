@@ -2,8 +2,7 @@
 
 module.exports = function (context) {
   var req = context.requireCordovaModule,
-
-      path = req ('path'),
+      path = require('path'),
       pathParse = require ('./lib/path-parse');
 
   path.parse = path.parse || pathParse;

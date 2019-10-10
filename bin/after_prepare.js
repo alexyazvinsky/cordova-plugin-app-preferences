@@ -1,11 +1,11 @@
 'use strict';
-var Q = require('q');
-var path = require('path');
-var fsModule = require('fs');
-var plist = require('plist');
-var xcode = require('xcode');
 
 module.exports = function (context) {
+	var Q = require('q');
+	var path = require('path');
+	var fsModule = require('fs');
+	var plist = require('plist');
+	var xcode = require('xcode');
 	var req = context.requireCordovaModule,
 		fs = require("./lib/filesystem")(Q, fsModule, path),
 		settings = require("./lib/settings")(fs, path),
