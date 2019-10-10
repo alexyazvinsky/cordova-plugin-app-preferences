@@ -9,6 +9,7 @@ module.exports = function (context) {
 	var
 		req = context ? context.requireCordovaModule : require,
 		cordova_util = req('cordova-lib/src/cordova/util'),
+		cordova_lib = req('cordova-lib'),
 		ConfigParser = req('cordova-common/src/ConfigParser/ConfigParser.js'),
 		fs = require("./filesystem")(Q, fsModule, path);
 
